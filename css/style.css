@@ -23,6 +23,7 @@ h2,
 .contact > h1 ~ hr,
 .prof-profile > h1 ~ hr,
 .service-list > h1 ~ hr {
+  width: 30%;
   border: solid 2px #f60f07;
   margin-left: 10px;
   margin-top: 0;
@@ -441,6 +442,7 @@ textarea {
     margin-top: 20px;
   }
 
+  /* cannot get this to work!!!!! */
   .service-list > h1 ~ hr {
     display: none;
 
@@ -449,6 +451,8 @@ textarea {
     grid-column: 1/1;
     grid-row: 1/2;*/
   }
+
+  /* end */
 
   .service-list > h1 {
     grid-column: 1/2;
