@@ -24,7 +24,7 @@ h2,
 .prof-profile > h1 ~ hr,
 .service-list > h1 ~ hr {
   width: 30%;
-  border: solid 2px #f60f07;
+  border: solid 3px #f60f07;
   margin-left: 10px;
   margin-top: 0;
 }
@@ -389,7 +389,7 @@ textarea {
   .service-list {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 60px auto;
   }
 
   .responsive-design,
@@ -443,13 +443,18 @@ textarea {
   }
 
   /* cannot get this to work!!!!! */
-  .service-list > h1 ~ hr {
-    display: none;
+  .service-list > h1 {
+    margin: 0;
+  }
 
-    /* margin: 0;
-    padding: 0;
+  .service-list > h1 ~ hr {
+    /* display: none;*/
     grid-column: 1/1;
-    grid-row: 1/2;*/
+    grid-row: 1/2;
+    border: 0;
+    border-bottom: solid 3px #f60f07;
+    margin: 0;
+    padding: 0;
   }
 
   /* end */
@@ -462,7 +467,7 @@ textarea {
   #learn-more {
     grid-column: 2/3;
     grid-row: 3/4;
-    width: 15%;
+    width: 25%;
     margin-top: 20px;
     margin-bottom: 0;
   }
