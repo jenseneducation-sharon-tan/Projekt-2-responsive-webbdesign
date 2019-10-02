@@ -387,8 +387,8 @@ textarea {
 
   .service-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
   }
 
   .responsive-design,
@@ -404,6 +404,24 @@ textarea {
   .responsive-design,
   .e-commerce {
     margin-top: 20px;
+  }
+
+  .responsive-design {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .e-commerce {
+    grid-column: 2/2;
+    grid-row: 2/3;
+  }
+  .content-management {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .analytics {
+    grid-column: 2/2;
+    grid-row: 3/4;
   }
 
   #img_services {
@@ -424,9 +442,16 @@ textarea {
   }
 
   .service-list > h1 ~ hr {
-    margin: 0;
+    display: none;
+
+    /* margin: 0;
     padding: 0;
     grid-column: 1/1;
+    grid-row: 1/2;*/
+  }
+
+  .service-list > h1 {
+    grid-column: 1/2;
     grid-row: 1/2;
   }
 
