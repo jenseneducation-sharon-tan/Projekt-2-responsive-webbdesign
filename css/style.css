@@ -24,8 +24,9 @@ h2,
 
 .contact > h1 ~ hr,
 .service-list > h1 ~ hr {
-  width: 30%;
-  border: solid 3px #f60f07;
+  width: 40%;
+  height: 3px;
+  background: #f60f07;
   margin-left: 10px;
   margin-top: 0;
 }
@@ -176,7 +177,7 @@ h3 {
 }
 
 .service-list-title > h1 ~ hr {
-  width: 110px;
+  width: 40%;
 }
 
 #img_services {
@@ -322,7 +323,8 @@ textarea {
 
   .nav-list > ul > li ~ hr {
     display: block;
-    border: solid 1px #707070;
+    height: 2px;
+    background: #707070;
     width: 60%;
     margin-left: 20px;
   }
@@ -422,20 +424,22 @@ textarea {
     margin-top: 20px;
   }
 
-  /* cannot get this to work!!!!! */
   .service-list > h1 {
     margin: 0;
   }
 
   .service-list > h1 ~ hr {
-    /* display: none;*/
-    grid-column: 1/1;
-    grid-row: 1/2;
-
-    border: 0;
-    border-bottom: solid 3px #f60f07;
     margin: 0;
     padding: 0;
+    border: none;
+    height: 3px;
+    background: #f63f07;
+    width: 40%;
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* grid-column: 1/1;
+    grid-row: 1/2;*/
   }
 
   /* end */
@@ -498,7 +502,6 @@ textarea {
     justify-content: flex-start;
     grid-column: 2/3;
     grid-row: 3/4;
-    margin-top: 30px;
   }
 
   #social {
@@ -533,6 +536,14 @@ textarea {
   .hello-2 {
     letter-spacing: 10px;
   }
+
+  .social-network-logo {
+    margin-top: 40px;
+  }
+
+  .service-list > h1 ~ hr {
+    width: 30%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -540,5 +551,9 @@ textarea {
     font-size: 1.5em;
     width: 35%;
     padding: 40px;
+  }
+
+  .service-list > h1 ~ hr {
+    width: 18%;
   }
 }
